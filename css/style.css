@@ -1,0 +1,92 @@
+/*---------------
+fonts
+----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Righteous&family=Roboto:wght@400;700&family=Sarala&display=swap');
+
+/*---------------
+custom variaveis
+----------------*/
+
+:root{
+  --pink:#fb839e;
+  --bg-black-900: #000000;
+  --bg-black-100: #dddddd;
+  --bg-black-50: #eff0f4;
+  --text-black-900:#000000;
+  --text-black-700: #555555;
+  --text-black-600:#666666;
+  --text-black-300: #bbbbbb;
+  --bg-black-100: #dddddd;
+  --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+  --outer-shadow-0: 0px 0px 0px #d0d0d0, 0px 0px 0px #f8f8f8;
+  --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
+  --inner-shadow-0: inset 0 0 0 #d0d0d0, inset 0 0 0 #f8f8f8;
+}
+
+/*-------------
+global
+-------------*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Abel', sans-serif;
+}
+
+body{
+  background-color: var(--bg-black-50);
+}
+
+.outerShadow{
+  box-shadow: var(--outer-shadow);
+}
+
+.innerShadow{
+  box-shadow: var(--inner-shadow);
+}
+
+/*-------------
+card
+-------------*/
+
+.card-header{
+  font-size: 22px;
+}
+.city{
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--text-black-700);
+}
+
+.date{
+ font-size: 16px;
+ color: var(--text-black-600);
+}
+
+.container-temp{
+  margin: 0 0 10px 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 700;
+  text-shadow: 3px 2px rgba(0, 0, 0, 0.082);
+  cursor: pointer;
+}
+input, .form-control, .btn{
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.btn:hover{
+  color: var(--text-black-900);
+}
+
+.btn{
+  color: var(--text-black-600);
+}
+
+.hi-low,
+.weather{
+  color: var(--text-black-300);
+}
